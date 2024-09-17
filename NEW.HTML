@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first-div">
+       <button id="btn-minimus">-</button>
+       <div id="text">0</div>
+       <button id="btn-plus">+</button>
+    </div>
+    <script>
+       let btn=document.getElementById("btn-minimus");
+       let btn_second=document.getElementById("btn-plus");
+       btn.addEventListener("click",helper);
+       btn_second.addEventListener("click",helper_two);
+        function helper()
+        {
+            let ref=document.getElementById("text");
+            let text=ref.innerText;
+            ref.innerText=text+1;
+        }
+    </script>
+</body>
+</html>
